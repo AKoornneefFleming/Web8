@@ -10,6 +10,7 @@ body{
     background-repeat: no-repeat;
 }
 
+/***********************Fonts and Text**********************/
 .h1_header {
     font-size: 48px; 
     color: white;
@@ -58,12 +59,23 @@ h2 {
     text-shadow: 2px 2px black;
 }
 
+h3 {
+    font-size: 18px; 
+    color: white;
+    text-align: left;
+    font-weight: 750;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    text-shadow: 2px 2px black;
+}
+
 
 .p1 {
     color: white;
     text-align: justify;
     font-family: 'Avenir Next LT Pro', sans-serif;
 }
+
+/***********************Main div containers **********************/
 
 div.container {
     display: flex;
@@ -92,6 +104,13 @@ div.text {
 	text-align: justify;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+div.spaced_text {
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 15px;
+    margin-top: 60px;
 }
 
 div.profile_photos {
@@ -139,6 +158,37 @@ div.profile_photos {
  } 
 
 
+
+/***********************Links (not Navbar) **********************/
+div .link_holder {
+    text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+div .on_page_links a {
+  display: inline-block; /* to make the entire div clickable */
+  text-align: center;
+  border-radius: 25px; 
+  padding: 15px; 
+  border: 2px solid black; 
+  width: 100px;
+  background-color: rgb(17, 46, 12); 
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
+  margin-top: 25px;
+  text-shadow: .5px 1px black;
+}
+
+div .on_page_links a:hover {
+  color: #e3b719;
+  background-color: rgb(20, 19, 29); /* to highlight the link when hovered over */
+}
+
+
  /********************** HEADER **********************/
 
  /* Option 1: This header floats centered and not in the corners */
@@ -178,9 +228,23 @@ header.fix_to_top_header {
 
   /********************** Photos **********************/
 
-  img.profile_photos {
+img.profile_photos {
 	border-radius: 100px; 
 	border: 2px solid black; 
 	max-width: 100%;
 	margin-top: 25px;
+}
+
+div.port_photo_holder{
+    text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+    margin-top: 25px;
+}
+
+img.port_photos {
+	border-radius: 25px; 
+	border: 2px solid black; 
+	max-width: 100%;
+	margin-top: 10px;
 }
