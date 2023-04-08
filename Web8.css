@@ -75,6 +75,15 @@ h3 {
     font-family: 'Avenir Next LT Pro', sans-serif;
 }
 
+.p2 {
+    color: white;
+    text-align: justify;
+    font-family: 'Avenir Next LT Pro', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
 /*********************** Bullet Points **********************/
 ul {
     list-style-type: disc;
@@ -128,13 +137,7 @@ div.spaced_text {
     margin-top: 60px;
 }
 
-div.profile_photos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	padding-left: 15px;
-	padding-right: 15px;
-}
+
 
     /***********************NavBar**********************/
 /* https://www.w3schools.com/howto/howto_js_tabs.asp */
@@ -181,6 +184,12 @@ div .link_holder {
 	padding-right: 15px;
 }
 
+div .link_holder_left {
+    text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 
 div .on_page_links a {
   display: inline-block; /* to make the entire div clickable */
@@ -206,19 +215,6 @@ div .on_page_links a:hover {
 
  /********************** HEADER **********************/
 
- /* Option 1: This header floats centered and not in the corners */
- /* header.floating_header { */
-	/* background-color: #777; For browsers that do not support gradients */
-	/* background-image: linear-gradient(to bottom right, rgba(94, 94, 94, 0),rgb(29, 29, 29, 1)); w3schools - css gradients */
-	/* padding: 15px; space formatting  */
-	/* border-radius: 5px; border shaping of header  */
-	/* border: 1px solid black; basic formatting  */
-	/* text-align: center; center-align the header text  */
-	/* margin: 20px;  */
-	/* margin-top: 30px; */
-	/* border: 1.5mm ridge rgba(20, 20, 19, 0.9)  */
-  /* } */
-
    /* Option 1: This header floats centered and not in the corners */
 header.fix_to_top_header {
 	background-color: #777; /*For browsers that do not support gradients */
@@ -242,6 +238,13 @@ header.fix_to_top_header {
 
 
   /********************** Photos **********************/
+div.profile_photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
 img.profile_photos {
 	border-radius: 100px; 
@@ -257,9 +260,17 @@ div.port_photo_holder{
     margin-top: 25px;
 }
 
+div.port_photo_holder_left{
+    text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+    margin-top: 25px;
+}
+
 img.port_photos {
 	border-radius: 25px; 
 	border: 2px solid black; 
 	max-width: 100%;
 	margin-top: 10px;
 }
+
