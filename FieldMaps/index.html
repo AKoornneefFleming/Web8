@@ -77,11 +77,11 @@
             <ul>
                 <li>Users can collect data in the field and upload their data to the hosted feature layer in a few simple steps  </li>
                 <li>Editing and synching capabilities can be enabled for specific features within a configured map </li>
-                        <li>Add, delete and update capabilities can individually be allowed </li>
+                <li class="a">Add, delete and update capabilities can individually be allowed </li>
                 <li>Editing can be tracked, and can be allowed publicly or only within the organization  </li>
                 <li>Forms can be configured to each feature, based on the features fields </li>
-                        <li>Fields can be required, calculated based on other fields, shown or hidden, have default values, etc.  </li>
-                        <li>Domains, set up for the feature in ArcGIS Pro, can be configured as selectable options for that field  </li>
+                <li class="a">Fields can be required, calculated based on other fields, shown or hidden, have default values, etc.  </li>
+                <li class="a">Domains, set up for the feature in ArcGIS Pro, can be configured as selectable options for that field  </li>
             </ul>
         </div>
         
@@ -91,9 +91,9 @@
                 <li>Esri account is not required for maps shared publicly </li>
                 <li>The application shows the users real time location </li>
                 <li>User’s can not only see the map, but can search and select features  </li>
-                        <li>To ensure this capability, choose a display field for the feature in ArcGIS Pro that will correspond with each records title </li>
+                <li class="a">To ensure this capability, choose a display field for the feature in ArcGIS Pro that will correspond with each records title </li>
                 <li>Uploading the desired map as a mobile map package to AGOL allows the map to be downloadable, by users, for offline use</li>
-                        <li>Using a mobile map package is ideal for navigation purposes, as it won’t give users editing capabilities </li>
+                <li class="a">Using a mobile map package is ideal for navigation purposes, as it won’t give users editing capabilities </li>
                 <li>Features can be navigated to with use of the compass widget, telling the user what direction and far they’ll need to travel to get to their destination  </li>
             </ul>
         </div>
@@ -104,7 +104,7 @@
                 <li>Specific users within the organization can be selected for tracking and/or to view other users tracks </li>
                 <li>Tracked users can specify the duration of time they would like to be tracked within the Field Maps mobile app </li>
                 <li>The track view layer displays both last known location and user tracks (users travels, shown as linear features on the map) </li>
-                        <li>For our use case, it was most beneficial to hide the users tracks, and only display the last known location on the configured map </li>
+                <li class="a">For our use case, it was most beneficial to hide the users tracks, and only display the last known location on the configured map </li>
             </ul>
         </div>
         
@@ -124,8 +124,8 @@
         </div>
         <ul>
             <li>Calculation conundrums </li>
-                    <li>Expressions for automatically populating field values can only be written in arcade, which took the team a bit of time to adjust to  </li>
-                    <li>Ideally, a field for the date of data collection could be automatically populated with the current days date. Unfortunately, the arcade expression for retrieving the date value did not work as it should have, and is a problem amongst many Field Maps users. If more time was allotted, the team would look further into this issue for resolve. </li>
+            <li class="a">Expressions for automatically populating field values can only be written in arcade, which took the team a bit of time to adjust to  </li>
+            <li class="a">Ideally, a field for the date of data collection could be automatically populated with the current days date. Unfortunately, the arcade expression for retrieving the date value did not work as it should have, and is a problem amongst many Field Maps users. If more time was allotted, the team would look further into this issue for resolve. </li>
         </ul>
          
         <div class = "text">
@@ -133,12 +133,12 @@
         </div>
         <ul>
             <li>Basemap bummers  </li>
-                    <li>Esri basemaps should be compatible with mobile map packages, but ultimately would not show up on the mobile application </li>
-                    <li>Our final solution opted to use a custom basemap created by the team, uploaded as feature layers   </li>
-                    <li>Ideally the basemap should not be shown as an operational layer, and with more time we would have added it to the map as a true basemap or raster layer   </li>
+            <li class="a">Esri basemaps should be compatible with mobile map packages, but ultimately would not show up on the mobile application </li>
+            <li class="a">Our final solution opted to use a custom basemap created by the team, uploaded as feature layers   </li>
+            <li class="a">Ideally the basemap should not be shown as an operational layer, and with more time we would have added it to the map as a true basemap or raster layer   </li>
             <li>Searchability suffering   </li>
-                    <li>Features should be searchable using the search widget in the mobile app, however records within the feature layer were not in our final solution    </li>
-                    <li>Ideally the user should be able to search for specific features via the records display name, and with more time the team would certainly fix this dilemma    </li>
+            <li class="a">Features should be searchable using the search widget in the mobile app, however records within the feature layer were not in our final solution    </li>
+            <li class="a">Ideally the user should be able to search for specific features via the records display name, and with more time the team would certainly fix this dilemma    </li>
         </ul>
             
         <div class = "text">
@@ -146,13 +146,13 @@
         </div>
         <ul>
             <li>Administrator ambiguity  </li>
-                    <li>Because the track view layer has to be set up by an administrator and is owned by them, several issues arise   </li>
-                    <li>The administrator is responsible for setting up the track view layer and enabling user settings   </li>
-                    <li>As a non-owner, filters cannot be employed to the layer on AGOL maps, and a temporal filter is recommended to avoid showing old data   </li>
-                    <li>As a non-owner, the layers refresh interval can’t be changed in AGOL, and there is no way to check what it’s set to. For best practice, it’s recommended that last known location is set to refresh every 30 seconds.   </li>
+            <li class="a">Because the track view layer has to be set up by an administrator and is owned by them, several issues arise   </li>
+            <li class="a">The administrator is responsible for setting up the track view layer and enabling user settings   </li>
+            <li class="a">As a non-owner, filters cannot be employed to the layer on AGOL maps, and a temporal filter is recommended to avoid showing old data   </li>
+            <li class="a">As a non-owner, the layers refresh interval can’t be changed in AGOL, and there is no way to check what it’s set to. For best practice, it’s recommended that last known location is set to refresh every 30 seconds.   </li>
             <li>Symbology sadness   </li>
-                    <li>Originally the symbology for each users location was a dot with their initials. After using the application a couple of times, all of the users symbols were the same, using one users initials. If more time was allotted, the team would further investigate this issue.  </li>
-                    <li>Problems like this may be expected, as ArcGIS Tracker is technically deprecated.   </li>
+            <li class="a">Originally the symbology for each users location was a dot with their initials. After using the application a couple of times, all of the users symbols were the same, using one users initials. If more time was allotted, the team would further investigate this issue.  </li>
+            <li class="a">Problems like this may be expected, as ArcGIS Tracker is technically deprecated.   </li>
         </ul>
         <!--------------------------------------------- Demo ------------------------------------------------------------------>
 
