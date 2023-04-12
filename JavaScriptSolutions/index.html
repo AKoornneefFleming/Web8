@@ -53,13 +53,13 @@
                 It also allows our client to host the solution directly on their existing website server, making it easier for potential users to organically
                 find the navigation solution without the need to download any additional applications, or navigate to third-party sites.
             </p>
-            <p class = "p1"> Solutions can integrate a wide range of spatial data types from different data tier sources sources. This can be existing data within the client's ArcGIS Online (AGOL) 
-                or ArcGIS Enterprise account. It can be GeoJSON files hosted in GitHub for a lightweight and open source solution if our client had no budget or privacy concnerns. Or in the case of Leaflet, 
-                open source data such as Open Street Maps, or data hosted in Geoserver and other locations all become possibilities.
+            <p class = "p1"> Solutions can integrate a wide range of spatial data types from different data tier sources. This can be existing data within the client's ArcGIS Online (AGOL) 
+                or ArcGIS Enterprise account. It can be GeoJSON files hosted in GitHub for a lightweight open-source solution if our client had no budget or privacy concerns. Or in the case of Leaflet, 
+                open-source data such as Open Street Maps, or data hosted in Geoserver and other locations all become possibilities.
             </p>
-            <p class = "p1">A cost associated with this solution, is the skill level and resources in terms of time (and potentially equipment). Expecially as the complexity of the projects increase. 
-                They require in-house web development capabilities in order for our client to maintain. It also increases the length of time required to develop a high-quality solution. In the case of 
-                ArcGIS Maps SDK for JavaScript, Esri licensing is also required. 
+            <p class = "p1">A cost associated with this solution, is the skill level and resources in terms of time (and potentially equipment). Especially as the complexity of the projects increase. 
+                They require in-house web development capabilities for our client to maintain. It also increases the length of time required to develop a high-quality solution. In the case of 
+                ArcGIS Maps SDK for JavaScript, Esri licensing is also required. It should be noted that these solutions were still significantly simpler then Esri’s application development solutions which required knowledge of .Net and/or .Java. 
             </p>
              <!-- Links -->
             <div class = "link_holder">
@@ -76,7 +76,7 @@
         <div class = "text">
             <p class = "p1"> For this project, the Web8 development team experimented with both the ArcGIS Maps SDK for JavaScript (ArcGIS licensing required) 
                 as well as the open-source JavaScript library Leaflet (open source). ArcGIS is a developer product for building mapping and spatial analysis applications for the web.
-                Leaflet is an open-source JavaScript library for mobile-friendly interactive maps. Both solutions were tested and implemented by hosting webpages in GitHub, and using 
+                Leaflet is an open-source JavaScript library for mobile-friendly interactive maps. Both solutions were tested and implemented by hosting webpages in GitHub and using 
                 the JavaScript to create the required functionality and call in the required resources. 
                 To follow along with the development process, we have made the demo pages and the GitHub repository they are hosted in available, so you can follow along with 
                 the code and resulting visualization.
@@ -87,8 +87,8 @@
             <p class = "p2">Initiating a Leaflet Hello World proof of concept test:</p>
         </div>
         <ul>
-            <li>Getting your first Leaflet map up and running is as simple as following along with the tutorial</li>
-            <li>In this case, AI generated comments were added to the code in the repository to demistify the various componets of our first Leaflet test and to
+            <li>Getting your first Leaflet map up and running is as simple as following along with the tutorial.</li>
+            <li>In this case, AI generated comments were added to the code in the repository to demystify the various components of our first Leaflet test and to
                 simplify starting future Leaflet related projects. 
             </li>
         </ul>
@@ -96,11 +96,11 @@
             <p class = p1>Important code components include:</p>
         </div>
         <ul>
-            <li>Setting your script source to the Leaflet Javascript CDN (see the header section)</li>
-            <li>Creating a map variable and view set, and position it AFTER the div element that it will be populating</li>
-            <li>Importing in your data (in this case, a tileLayer from Open Street Map as a basemap)</li>
-            <li>Creating variables for your polygons and popups, and adding them to the map view</li>
-            <li>Writing functions that relate to the variable elements (e.g. map.on('click', onMapClick); that control your map element variables)</li>
+            <li>Setting your script source to the Leaflet JavaScript CDN (see the header section).</li>
+            <li>Creating a map variable and view set, and position it AFTER the div element that it will be populating.</li>
+            <li>Importing in your data (in this case, a tileLayer from Open Street Map as a basemap).</li>
+            <li>Creating variables for your polygons and popups and adding them to the map view.</li>
+            <li>Writing functions that relate to the variable elements (e.g. map.on('click', onMapClick); that control your map element variables).</li>
         </ul>
             <!-- Links -->
         <div class = "link_holder_left">
@@ -118,14 +118,14 @@
         </div>
         <div class = "text">
             <p class = p1>This time, we introduce some code that allows the user to see where they are in relation to the map. This
-                relates to the navigation component of the solution. The code in this rerpository includes:</p>
+                relates to the navigation component of the solution. The code in this repository includes:</p>
         </div>
         <ul>
-            <li>Using the map.locate class to use geolocation to find the user's location</li>
-            <li>Creating a function for what will happen when the user's location is found </li>
-            <li>Creating a marker at the user's location that display's the accuracy of the user's GPS and a polygon buffered around the location</li>
-            <li>Adding a line to execute the function once the user's location is found</li>
-            <li>Creating a second function and execution series in the event the user's location is not found</li>
+            <li>Using the map.locate class to use geolocation to find the user's location.</li>
+            <li>Creating a function for what will happen when the user's location is found.</li>
+            <li>Creating a marker at the user's location that display's the accuracy of the user's GPS and a polygon buffered around the location.</li>
+            <li>Adding a line to execute the function once the user's location is found.</li>
+            <li>Creating a second function and execution series in the event the user's location is not found.</li>
         </ul>
         <!-- Screenshot of solution -->
         <div class = "port_photo_holder_left">
@@ -148,12 +148,12 @@
             <p class = p1>Same functionality, but this time in ArcGIS Maps SDK for JavaScript. Let's review the important components of this API as well as the location specific code:</p>
         </div>
         <ul>
-            <li>This API has it's own JavaScript CDN to reference. This code references version 4.26</li>
-            <li>Set your require object, and reference the necessary functions. ('Map' and 'MapView' are common ones. 'Locate' and 'Track' are specific to this use-case, as well as 'Graphic' for styling)</li>
-            <li>Add your API key to the code, and manage in ArcGIS Developer. Use a temporary token if required for local testing</li>
-            <li>Create your Map and Map view constants</li>
-            <li>For location tracking, set a new constant for tracking, that leverages the 'Track' function object. Style to taste</li>
-            <li>Add the view to the map for the tracking variable</li>
+            <li>This API has its own JavaScript CDN to reference. This code references version 4.26.</li>
+            <li>Set your require object, and reference the necessary functions. ('Map' and 'MapView' are common ones. 'Locate' and 'Track' are specific to this use-case, as well as 'Graphic' for styling).</li>
+            <li>Add your API key to the code, and manage in ArcGIS Developer. Use a temporary token if required for local testing.</li>
+            <li>Create your Map and Map view constants.</li>
+            <li>For location tracking, set a new constant for tracking, that leverages the 'Track' function object. Style to taste.</li>
+            <li>Add the view to the map for the tracking variable.</li>
         </ul>
                     <!-- Screenshot of solution -->
         <div class = "port_photo_holder_left">
@@ -177,11 +177,11 @@
             <p class = p1>This time we'll be building on our normal ArcGIS Maps SDK for JavaScript workflows, but with a couple unique steps:</p>
         </div>
         <ul>
-            <li>Create a GeoJSON through your desired method (e.g. converting in ArcGIS Pro, through geojson.io, etc.)</li>
+            <li>Create a GeoJSON through your desired method (e.g. converting in ArcGIS Pro, through geojson.io, etc.).</li>
             <li>Ensure that your GeoJSON is hosted in a place you can reference, such as a GitHub repository.</li>
             <li>The functions we should be calling this time include GeoJSONLayer, as well as Graphic, GraphicsLayer, and SimpleLineSymbol for styling.</li>
-            <li>This time, we will create variables for our symbology, and for our function that will call in our GeoJSON's URL, which references the symbology variable</li>
-            <li>Add the GeoJSON variable to the map view</li>
+            <li>This time, we will create variables for our symbology, and for our function that will call in our GeoJSON's URL, which references the symbology variable.</li>
+            <li>Add the GeoJSON variable to the map view.</li>
         </ul>  
         <!-- Links -->
         <div class = "link_holder_left">
@@ -196,13 +196,13 @@
             <p class = "p2">Building a simple campus map with location tracking, using ArcGIS Maps SDK and data hosted in AGOL:</p>
         </div>
         <div class = "text">
-            <p class = p1>Finally we will be putting it altoghether, but time referencing an AGOL layer and adding labels:</p>
+            <p class = p1>Finally we will be putting it all together, but time referencing an AGOL layer and adding labels:</p>
         </div>
         <ul>
-            <li>Since we are adding FeatureLayers from AGOL, import the FeatureLayer functions</li>
-            <li>Create a label class. Ensure that the expression section of the code remains "#feature." and then your attribute name. This part can be tricky</li>
-            <li>Create constants for the data that will be added from AGOL that will use the FeatureLayer function, and reference the URL from the Feature Layer's object page in AGOL</li>
-            <li>Add the constant to the map</li>
+            <li>Since we are adding FeatureLayers from AGOL, import the FeatureLayer functions.</li>
+            <li>Create a label class. Ensure that the expression section of the code remains "#feature." and then your attribute name. This part can be tricky.</li>
+            <li>Create constants for the data that will be added from AGOL that will use the FeatureLayer function, and reference the URL from the Feature Layer's object page in AGOL.</li>
+            <li>Add the constant to the map.</li>
             <li>Repeat the steps identified previously for adding location tracking to the map view.</li>
         </ul> 
         <!-- Screenshot of solution -->
@@ -230,13 +230,13 @@
             <li>If the client is working specifically with an AGOL infrastructure, with possibly some GeoJSON files as well, ArcGIS JavaScript is a reasonable approach. 
                 However, introducing non-Esri middle tier and data tier makes Leaflet a better potential option.</li>
             <li>Creating websites rather than implementing a no-code approach such as ArcGIS Story Maps or ArcGIS Experience Builder, requires patience and/or experience and may 
-                not be suitable for projects with short turnaround times and high quality requirements. 
+                not be suitable for projects with short turnaround times and high-quality requirements. 
                 It also requires the client to have their own server and domain to host the web page, and a web team to integrate and maintain it. </li>
             <li>A challenge associated with using GeoJSON files is that it appears to require stylizing the symbology in the code itself, adding to the complexity of the solution.</li>
             <li>There were a few bugs experienced using API keys with ArcGIS Maps SDK for JavaScript v4.25 to display AGOL content. This necessitated working 
                 backwards and using v4.24 until v4.26 was released. </li>
             <li>On several occasions, the hosted webpages were flagged as security concerns by browsers during testing. This highlights the importance of sufficient 
-                knowledge about internet security practices before creating and hosting your own websites for public viewing, as well as open source components.</li>
+                knowledge about internet security practices before creating and hosting your own websites for public viewing, as well as open-source components.</li>
         </ul>
       
     </div>
