@@ -211,6 +211,22 @@ div .on_page_links a {
   text-shadow: .5px 1px black;
 }
 
+div .on_page_links_b a {
+  display: inline-block; /* to make the entire div clickable */
+  text-align: center;
+  border-radius: 25px; 
+  padding: 15px; 
+  border: 2px solid black; 
+  width: 150px;
+  background-color: rgb(17, 46, 12); 
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
+  margin-top: 25px;
+  text-shadow: .5px 1px black;
+}
+
 div .on_page_links a:hover {
   color: #e3b719;
   background-color: rgb(20, 19, 29); /* to highlight the link when hovered over */
