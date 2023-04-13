@@ -211,7 +211,13 @@ div .on_page_links a {
   text-shadow: .5px 1px black;
 }
 
-div .on_page_links_b a {
+
+div .on_page_links a:hover {
+  color: #e3b719;
+  background-color: rgb(20, 19, 29); /* to highlight the link when hovered over */
+}
+
+div .on_page_linkz a {
   display: inline-block; /* to make the entire div clickable */
   text-align: center;
   border-radius: 25px; 
@@ -227,7 +233,7 @@ div .on_page_links_b a {
   text-shadow: .5px 1px black;
 }
 
-div .on_page_links a:hover {
+div .on_page_linkz a:hover {
   color: #e3b719;
   background-color: rgb(20, 19, 29); /* to highlight the link when hovered over */
 }
