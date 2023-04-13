@@ -47,14 +47,14 @@
             <h2>Using Field Maps to configure web-based solutions</h2>
         </div> 
         <div class = "text">
-            <p class = "p1"> The capabilities of ArcGIS Field Maps has undeniable alignment with the Web8 teams’ proposal. Field Maps is a mobile-based configurable
+            <p class = "p1"> The capabilities of ArcGIS Field Maps is well suited to Fleming College’s problem statement regarding functionality for internal staff use. Field Maps is a mobile-based configurable
                 application that can be leveraged in a variety of use cases. The Web8 team used Field Maps to create solutions for navigation, location tracking, and 
-                data collection. The solutions created for data collection and location tracking are our final and best solutions for these use cases.
+                data collection. The solutions created for data collection and location tracking are our final and best solutions for these specific use cases.
             </p>
-            <p class = "p1"> First and foremost, Field Maps is intended for use as a data collection application. It allows workers to collect data in the field on 
+            <p class = "p1">First and foremost, Field Maps is intended for use as a data collection application. It allows workers to collect data in the field on 
                 their mobile device and upload information to a shared database. The Web8 team took advantage of this, by using Field Maps to solve the clients need 
                 for data collection around the campus. A hosted feature layer with editing and syncing properties enabled was brought into an AGOL map for further 
-                configuration in Field Maps web designer. This allowed forms to be created for data collection and entry into the hosted feature layer. With the 
+                configuration in Field Maps Web Designer. This allowed forms to be created for data collection and entry into the hosted feature layer. With the 
                 mobile Field Maps app, the user can collect and enter the features data effortlessly. 
             </p>
             
@@ -69,7 +69,7 @@
                 </div>
             </div>
             
-            <p class = "p1"> Next, the Web8 team used the software to create a navigation solution. Field Maps can help users find features and show asset information. By creating a map with the necessary features in ArcGIS Pro and exporting the map as a mobile map package on AGOL, users can then view and interact with the map in the mobile application. Users can view their location and navigate towards their desired location in a fully customized map.  
+            <p class = "p1"> Next, the Web8 team used the software to create a navigation solution. Field Maps can help internal users find features and show asset information. By creating a map with the necessary features in ArcGIS Pro and exporting the map as a mobile map package on AGOL, users can then view and interact with the map in the mobile application. Users can view their location and navigate towards their desired location in a fully customized map.  
             </p>
             
         <!-- Links -->
@@ -79,7 +79,13 @@
                 </div>
             </div>
             
-            <p class = "p1"> Finally, Field Maps was used by the Web8 team to create a location tracking application for the client. ArcGIS Track Viewer can be used to set up a Track View, for specific users, which can then be shown in the Field Maps application. The AGOL administration sets up the tack view, ensures the users location tracking settings are enabled, and specifies users to be tracked and to be able to see others tracks. Once the track view layer is configured in an AGOL map, users with access to the layer can then view the map in the Field Maps mobile application. The way we configured the solution, the last known location of the specified users are visible within the map.  
+            <p class = "p1"> Finally, Field Maps was used by the Web8 team to create a location tracking application for the 
+                client. ArcGIS Track Viewer can be used to set up a Track View, for specific users, which can then be shown in 
+                the Field Maps application. The AGOL administration sets up the track view, ensures the users location tracking 
+                settings are enabled, and specifies users to be tracked and to be able to see others tracks. Once the track view 
+                layer is configured in an AGOL map, users with access to the layer can then view the map in the Field Maps mobile 
+                application. For this use case, the last known location of the specified users was configured to be visible 
+                within the map.  
             </p>
              
         <!-- Screenshot of QR Code -->
@@ -98,14 +104,15 @@
             <h2>What Worked Well</h2>
         </div> 
         <div class = "text">
-            <p class = "p1"> The Web8 development team experimented with several different use case solutions using Field Maps. Essentially the software worked well in a variety of ways to solve the clients’ problems. 
+            <p class = "p1"> The Web8 development team experimented with several different use case solutions using Field Maps. 
+                The software worked well in a variety of ways to solve the clients’ problems. 
             </p>
         </div>
         
         <div class = "text">
             <p class = "p2">Data Collection Solution</p>
             <ul>
-                <li>Users can collect data in the field and upload their data to the hosted feature layer in a few simple steps.  </li>
+                <li>Users can collect and edit data in the field and upload their data to the hosted feature layer in a few simple steps.  </li>
                 <li>Editing and synching capabilities can be enabled for specific features within a configured map. </li>
                 <li class="a">Add, delete and update capabilities can individually be allowed. </li>
                 <li>Editing can be tracked, and can be allowed publicly or only within the organization.  </li>
@@ -125,7 +132,7 @@
         <div class = "text">
             <p class = "p2">Navigation Solution</p>
             <ul>
-                <li>Esri account is not required for maps shared publicly. </li>
+                <li>An Esri account is not required to see publicly shared maps.</li>
                 <li>The application shows the users real time location. </li>
                 <li>User’s can not only see the map, but can search and select features.  </li>
                 <li class="a">To ensure this capability, choose a display field for the feature in ArcGIS Pro that will correspond with each records title. </li>
@@ -164,7 +171,7 @@
         <div class = "text">
             <p class = "p1"> Although the capabilities of Field Maps truthfully exceeded our expectations, there were major downfalls that kept this solution from 
                 superseding the others. The biggest consequence of Field Maps is that it is a mobile only application that the user needs to download prior to using
-                the solution. Other issues and mishaps with this solution were due to time constraints and include the following: </p>
+                the solution. Other issues and mishaps with this solution were not resolved due to time constraints, but are likely manageable with a bit more effort. </p>
         </div>
             
         <div class = "text">
@@ -173,7 +180,7 @@
         <ul>
             <li>Calculation conundrums </li>
             <li class="a">Expressions for automatically populating field values can only be written in arcade, which took the team a bit of time to adjust to.  </li>
-            <li class="a">Ideally, a field for the date of data collection could be automatically populated with the current days date. Unfortunately, the arcade expression for retrieving the date value did not work as it should have, and is a problem amongst many Field Maps users. If more time was allotted, the team would look further into this issue for resolve. </li>
+            <li class="a">Ideally, a field for the date of data collection could be automatically populated with the current days date. Unfortunately, the arcade expression for retrieving the date value did not work as it should have, and is a problem amongst many Field Maps users. </li>
         </ul>
          
         <div class = "text">
@@ -186,7 +193,7 @@
             <li class="a">Ideally the basemap should not be shown as an operational layer, and with more time we would have added it to the map as a true basemap or raster layer.   </li>
             <li>Searchability suffering   </li>
             <li class="a">Features should be searchable using the search widget in the mobile app, however records within the feature layer were not in our final solution.    </li>
-            <li class="a">Ideally the user should be able to search for specific features via the records display name, and with more time the team would certainly fix this dilemma.    </li>
+            <li class="a">Ideally the user should be able to search for specific features via the records display name.  </li>
         </ul>
             
         <div class = "text">
@@ -199,7 +206,7 @@
             <li class="a">As a non-owner, filters cannot be employed to the layer on AGOL maps, and a temporal filter is recommended to avoid showing old data.   </li>
             <li class="a">As a non-owner, the layers refresh interval can’t be changed in AGOL, and there is no way to check what it’s set to. For best practice, it’s recommended that last known location is set to refresh every 30 seconds.   </li>
             <li>Symbology sadness   </li>
-            <li class="a">Originally the symbology for each users location was a dot with their initials. After using the application a couple of times, all of the users symbols were the same, using one users initials. If more time was allotted, the team would further investigate this issue.  </li>
+            <li class="a">Originally the symbology for each users location was a dot with their initials. After using the application a couple of times, all of the users symbols were the same, using one users initials. </li>
             <li class="a">Problems like this may be expected, as ArcGIS Tracker is technically deprecated.   </li>
         </ul>
         <!--------------------------------------------- Demo ------------------------------------------------------------------>
